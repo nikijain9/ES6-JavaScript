@@ -19,3 +19,7 @@ for (let keys of myMap.keys()) {
 for (let value of myMap.values()) {
     console.log(value);
 }
+
+for (let entry in myMap.entries()) {
+    console.log(`${entry[0]} -> ${entry[1]}` );
+}

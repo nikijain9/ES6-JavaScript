@@ -14,11 +14,11 @@ function* generator_function() {
 
 const generator_object = generator_function();
 
-console.log(generator_object.next());
-console.log(generator_object.next());
-console.log(generator_object.next());
+console.log(generator_object.next());    //done : false
+console.log(generator_object.next());   //done : false
+console.log(generator_object.next());  //value : undefined, done : true 
 
 
-for (const word of generator_object) {
-    console.log(word);
-}
+// for (const word of generator_object) {
+//     console.log(word);
+// }

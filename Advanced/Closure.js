@@ -22,3 +22,6 @@ var counter = (function() {
   console.log(counter.value()); // 2
   counter.decrement();
   console.log(counter.value()); // 1
+
+
+  

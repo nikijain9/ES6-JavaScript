@@ -19,3 +19,8 @@ const getArrowvalue = (m,bonus) => 10*m+bonus;
 console.log(getArrowvalue(5,50));
 
 console.log(typeof getArrowvalue);
+
+
+
+
+

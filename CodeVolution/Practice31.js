@@ -9,7 +9,7 @@
 
 let newSet = new WeakSet();
 let key2 = {
-    fname :"Chandler",
+    fname : "Chandler",
     lname : "Bing"
 };
 newSet.add(key2);

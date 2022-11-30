@@ -36,8 +36,4 @@ console.log(s1.sayFullName());
 console.log(`Age of this SuperHero is ${s1.age}`);
 s1.power();
 
-// String
-const str = 'Vishwas'
-for (const char of str) {
-   console. log(char);
-}
+
