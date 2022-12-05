@@ -46,5 +46,46 @@ console.log("Num1 is", num1);
 console.log("Num2 is", num2);
 
 //sort() => sort method sorts an array alphabetically
+let arr = [3, 23, 12, 8];
+console.log("The sorted array is: ", arr.sort()); //Sorting alphabetically in accordance with 1(A) = 12, 2(B) = 23, 3(C) = 3
 
-console.log("The sorted array is: ", num.sort());
+//Solution: The Compare Function
+//The sort() method can be supported with basic Comparison function which will return the difference either in +ve, -ve or 0
+
+//function(a, b) {return a - b}
+
+/*
+If the result is negative, a is sorted before b.
+If the result is positive, b is sorted before a.
+If the result is 0, nothing changes.
+*/
+
+console.log("The sorted array in ascending order is: ", arr.sort(function(a, b){return a - b}));
+//function(3,23) {return 3-23 = -ve} => a (3)
+//function(23,12) {return 23 -12 = +ve} => b (12)
+
+console.log(arr); //[ 3, 12, 23 ]
+
+console.log(arr.reverse()); //[ 23, 12, 3 ]
+console.log(arr);   //[ 23, 12, 3 ]
+
+//Splice => changes the content of your array by removing or replacing existing elements with new ones.
+
+//Syntax : Array.splice(start, removeCount, newItem, newItem, newItem, ...)
+// start -> index count to start from
+// removeCount -> to remove an element of the given index
+// newItem -> to add a new element
+
+let months = ["January", "February", "Monday", "Tuesday", "May"];
+months.splice(2,2,"March","April") //started from the second index i.e. Monday, removed 2 elements i.e. Monday and Tuesday and added two elements i.e. March and April
+console.log(months);
+
+//Slice => The slice() method can be used to create a copy of an array or return a portion of an array. It is important to note that the slice() method does not alter the original array but instead creates a shallow copy.
+
+let some_array = [56,85, 52, 56, 25, 42, 36, 71];
+console.log(some_array.length);
+let sliced_array = some_array.slice(6) //removes every element starting from index 6 till end and returns a new array of the removed elements
+console.log(sliced_array);  
+let new_sliced_array = some_array.slice(2,5) //removes every element starting from index 2 till index 5 and returns a new array of the removed elements
+console.log(new_sliced_array); 
+console.log(some_array); //return original array
