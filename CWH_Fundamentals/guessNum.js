@@ -17,7 +17,3 @@ do{
     else if(randomNum == userInput)
         console.log("You have guessed the correct number");
 }while(randomNum != userInput)
-
-// if (randomNum == userInput) {
-//     console.log("You have a correct guess");
-// }

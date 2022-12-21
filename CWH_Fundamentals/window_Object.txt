@@ -1,0 +1,21 @@
+Window {
+    Bom
+    Dom -> Document Object Model
+    JavaScript Core
+}
+
+window object represents  browser window and provides methods to control it. It is a global object.
+
+Dom -> Document Object Model -> Whole html page is converted to JavaScript object and is named as Document
+ 
+Basically DOM represents  the page content as HTML
+ document.body -> Page body as JS Object
+ document.dody.style.background = "Green" -> changes page backgroud to green (used specially upon user action)
+
+ BOM -> Browser Object Model
+ The BOM represents additional objects provided by the browser (host environment) for working with everything except the document
+
+ The functions alert, prompt, confirm are also a part of BOM
+
+ location.href = "https://google.com" -> redirects to another URL
+ 
